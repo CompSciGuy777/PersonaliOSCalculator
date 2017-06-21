@@ -20,11 +20,32 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBOutlet weak var display: UILabel?
+    
+    var userIsInTheMiddleOfTyping = false
+    
     @IBAction func digitInput(_ sender: UIButton) {
-        print(sender.currentTitle ?? "Hello")
+        let digit = sender.currentTitle!
         
+        if userIsInTheMiddleOfTyping {
+            let textCurrentlyInDisplay = display!.text!
+            display!.text = textCurrentlyInDisplay + digit
+        } else{
+            display!.text = digit
+            userIsInTheMiddleOfTyping = true
+        }
     }
 
-
+    @IBAction func preformOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
+        if let mathimaticalSymbol = sender.currentTitle {
+            switch mathimaticalSymbol {
+            case "π":
+                display!.text = String(Double.pi)
+            default:
+                break
+        }
+    }
 }
-
+}
