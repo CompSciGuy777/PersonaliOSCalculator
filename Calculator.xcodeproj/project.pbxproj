@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830FACE31EFBD51100BB3830 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FACE21EFBD51100BB3830 /* CalculatorBrain.swift */; };
 		83D7DA201E75E36C002F78C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7DA1F1E75E36C002F78C4 /* AppDelegate.swift */; };
 		83D7DA221E75E36C002F78C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7DA211E75E36C002F78C4 /* ViewController.swift */; };
 		83D7DA251E75E36C002F78C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7DA231E75E36C002F78C4 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		830FACE21EFBD51100BB3830 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		83D7DA1C1E75E36C002F78C4 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7DA1F1E75E36C002F78C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D7DA211E75E36C002F78C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				83D7DA1F1E75E36C002F78C4 /* AppDelegate.swift */,
 				83D7DA211E75E36C002F78C4 /* ViewController.swift */,
 				83D7DA231E75E36C002F78C4 /* Main.storyboard */,
+				830FACE21EFBD51100BB3830 /* CalculatorBrain.swift */,
 				83D7DA261E75E36C002F78C4 /* Assets.xcassets */,
 				83D7DA281E75E36C002F78C4 /* LaunchScreen.storyboard */,
 				83D7DA2B1E75E36C002F78C4 /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830FACE31EFBD51100BB3830 /* CalculatorBrain.swift in Sources */,
 				83D7DA221E75E36C002F78C4 /* ViewController.swift in Sources */,
 				83D7DA201E75E36C002F78C4 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				83D7DA461E75E36D002F78C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83D7DA471E75E36D002F78C4 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				83D7DA491E75E36D002F78C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83D7DA4A1E75E36D002F78C4 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				83D7DA4C1E75E36D002F78C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
