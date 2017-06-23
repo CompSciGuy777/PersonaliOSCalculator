@@ -9,9 +9,6 @@
 import Foundation
 
 
-func multiply(op1: Double, op2: Double) -> Double{
-return op1 * op2
-}
 
 struct CalculatorBrain {
     
@@ -30,7 +27,10 @@ struct CalculatorBrain {
         "e" : Operation.constant(M_E),
         "√" : Operation.unaryOperation(sqrt),
         "cos" : Operation.unaryOperation(cos),
-        "x" : Operation.binaryOperation(multiply),
+        "×" : Operation.binaryOperation({$0 * $1}),
+        "+" : Operation.binaryOperation({$0 + $1}),
+        "−" : Operation.binaryOperation({$0 - $1}),
+        "÷" : Operation.binaryOperation({$0 / $1}),
         "=" : Operation.equals
     ]
     
@@ -52,14 +52,14 @@ struct CalculatorBrain {
                     accumulator = nil
                 }
             case .equals:
-                PendingBinaryOperation()
+                performPendingBinaryOperation()
             }
         }
     }
-    private mutating func preformPendingBinaryOperation() {
+    private mutating func performPendingBinaryOperation() {
         if pendingBinaryOperation != nil && accumulator != nil {
             accumulator = pendingBinaryOperation!.perform(with: accumulator!)
-            accumulator = nil
+            pendingBinaryOperation = nil
         }
     }
     
@@ -72,10 +72,7 @@ struct CalculatorBrain {
         
         func perform(with secondOperand: Double) -> Double {
             return function(firstOperand, secondOperand)
-            
         }
-        
-        
     }
     
     
