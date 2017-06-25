@@ -14,6 +14,12 @@ struct CalculatorBrain {
     
     private var accumulator: Double?
     
+    private var floatingPoint: Bool = false
+    
+    private var resultIsPending: Bool = false
+    
+    private var description: String?
+    
     private enum Operation {
         case constant(Double)
         case unaryOperation((Double) -> Double)
@@ -35,9 +41,6 @@ struct CalculatorBrain {
     ]
     
     
-    
-    
-    
     mutating func performOperation(_ symbol: String){
         if let operation = operations[symbol] {
             switch operation {
@@ -56,6 +59,7 @@ struct CalculatorBrain {
             }
         }
     }
+    
     private mutating func performPendingBinaryOperation() {
         if pendingBinaryOperation != nil && accumulator != nil {
             accumulator = pendingBinaryOperation!.perform(with: accumulator!)
@@ -86,4 +90,11 @@ struct CalculatorBrain {
             return accumulator
         }
     }
+    
+    mutating func descriptionUpdate (_ operand: Double) {}
+    
+    
+    
+    
+    
 }

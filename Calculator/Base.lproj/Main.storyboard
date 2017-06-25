@@ -246,6 +246,9 @@
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="floatingPoint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQ4-Gm-PG0"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN1-HB-3cJ">
                                                         <rect key="frame" x="176.5" y="0.0" width="78.5" height="85.5"/>

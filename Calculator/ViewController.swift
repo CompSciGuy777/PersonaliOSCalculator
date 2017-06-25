@@ -47,6 +47,20 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func floatingPoint(_ sender: UIButton) {
+        if !userIsInTheMiddleOfTyping {
+            display.text = "0."
+        }
+        else if ((display.text?.range(of: ".")) == nil) {
+            display.text = display.text! + "."
+        }
+        userIsInTheMiddleOfTyping = true
+    }
+    
+    
+    
+    
+    
     private var brain: CalculatorBrain = CalculatorBrain()
     
     
