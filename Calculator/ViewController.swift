@@ -58,6 +58,10 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func resetAndColorChange(_ sender: UIButton) {
+        displayValue = 0
+        
+    }
     
     
     
@@ -77,4 +81,6 @@ class ViewController: UIViewController {
             displayValue = result
         }
     }
+    
+    
 }

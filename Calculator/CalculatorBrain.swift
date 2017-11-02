@@ -93,7 +93,11 @@ struct CalculatorBrain {
     
     mutating func descriptionUpdate (_ operand: Double) {}
     
+    mutating func clear() {
+      accumulator = nil
+      resultIsPending = false
     
+    }
     
     
     

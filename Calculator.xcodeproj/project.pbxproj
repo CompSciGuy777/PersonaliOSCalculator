@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					83D7DA1B1E75E36C002F78C4 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D7HL9LN83T;
 						ProvisioningStyle = Automatic;
 					};
 					83D7DA2F1E75E36D002F78C4 = {
@@ -416,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7HL9LN83T;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherDavis.Calculator;
@@ -428,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7HL9LN83T;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherDavis.Calculator;
